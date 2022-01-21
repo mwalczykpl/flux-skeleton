@@ -12,7 +12,6 @@ spec:
         kind: HelmRepository
         name: bitnami
         namespace: flux-system
-      version: 1.0.0
   interval: 1m0s
   releaseName: bitnami
 
