@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend
+  name: service_template
   labels:
-    app: backend
+    app: service_template
 spec:
   replicas: 1
   template:
     metadata:
-      name: backend
+      name: service_template
       labels:
-        app: backend
+        app: service_template
     spec:
       containers:
-        - name: backend
+        - name: service_template
           image: nginx
           imagePullPolicy: IfNotPresent
       restartPolicy: Always
